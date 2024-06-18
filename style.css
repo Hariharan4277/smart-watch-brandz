@@ -1,0 +1,268 @@
+
+
+
+
+
+
+
+
+
+
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensures the navbar is above other content */
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    padding: 0 15px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ffc107; /* Change color on hover */
+}
+
+/* Hamburger menu for smaller screens */
+.burger {
+    display: none; /* Initially hidden on larger screens */
+    cursor: pointer;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+}
+
+.content {
+    width: 100%;
+    overflow: hidden; /* Hide any overflow */
+}
+
+.content img {
+    width: 100%; /* Ensure image fills its container */
+    display: block; /* Remove extra space below inline images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content {
+    flex: 1 1 300px; /* Flexbox properties for responsiveness */
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content img {
+    max-width: 100%; /* Ensure image fits within its container */
+    height: auto; /* Maintain aspect ratio */
+}
+.content img:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.content p {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.content button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+/* Center align elements */
+.center {
+    text-align: center;
+}
+
+/* Styling for paragraphs and container */
+.para-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.para {
+    font-weight: 300;
+    line-height: 1.6;
+    text-align: justify;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #141313;
+    color: #fff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    list-style-type: none;
+  }
+  
+  .foot {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #141313;
+  
+    border: 2px solid white;
+  }
+  
+  img {
+    width: 30px;
+    margin-right: 10px;
+  }
+
+
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        text-align: center;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: block; /* Display hamburger menu icon */
+    }
+    
+    
+    
+    .container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .content {
+        width: 100%; /* Ensure each item takes full width */
+        
+    .para-container {
+        padding: 10px;
+    }
+    }
+    .footer {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .foot {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+}
+      
+
+
+@media only screen and (max-width: 600px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        text-align: center;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: block; /* Display hamburger menu icon */
+    }
+    
+    .foot {
+      flex-direction: column;
+    }
+  }
+
+   
